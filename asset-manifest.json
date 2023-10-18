@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Stretch-Python/static/css/main.e6c13ad2.css",
-    "main.js": "/Stretch-Python/static/js/main.f2cab32c.js",
+    "main.js": "/Stretch-Python/static/js/main.a4933b9d.js",
     "static/js/787.ba761d3c.chunk.js": "/Stretch-Python/static/js/787.ba761d3c.chunk.js",
     "index.html": "/Stretch-Python/index.html",
     "main.e6c13ad2.css.map": "/Stretch-Python/static/css/main.e6c13ad2.css.map",
-    "main.f2cab32c.js.map": "/Stretch-Python/static/js/main.f2cab32c.js.map",
+    "main.a4933b9d.js.map": "/Stretch-Python/static/js/main.a4933b9d.js.map",
     "787.ba761d3c.chunk.js.map": "/Stretch-Python/static/js/787.ba761d3c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.f2cab32c.js"
+    "static/js/main.a4933b9d.js"
   ]
 }
