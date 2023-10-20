@@ -1,14 +1,34 @@
-import React from 'react';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import BankingApp from './BankingApp';
+import Authentication from './Authentication';
+import Chatbox from './Chatbox';
+import MessageList from './MessageList';
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+      if (isAuthenticated) {
+          navigate("/banking");
+      }
+  }, [isAuthenticated, navigate]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to My GitHub Pages React App!</h1>
-        <p>This is a simple React app deployed on GitHub Pages without using the Git terminal.</p>
-      </header>
-    </div>
+      <Router>
+          <Routes>
+              <Route path="/" element={!isAuthenticated ? <Authentication setIsAuthenticated={setIsAuthenticated} /> : null} />
+              <Route path="/banking" element={
+                  <>
+                      <BankingApp />
+                      <MessageList />
+                      <Chatbox />
+                      <button onClick={() => setIsAuthenticated(false)}>Log Out</button>
+                  </>
+              } />
+          </Routes>
+      </Router>
   );
 }
 
