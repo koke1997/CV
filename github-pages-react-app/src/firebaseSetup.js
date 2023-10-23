@@ -14,4 +14,4 @@ const firebaseServices = {
     auth
 };
 
-export default firebaseServices;
+export { database, auth };
