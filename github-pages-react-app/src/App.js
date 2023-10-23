@@ -5,7 +5,7 @@ import Authentication from './Authentication';
 import Chatbox from './Chatbox';
 import MessageList from './MessageList';
 
-function App() {
+function MainApp() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const navigate = useNavigate();
 
@@ -16,7 +16,7 @@ function App() {
   }, [isAuthenticated, navigate]);
 
   return (
-      <Router>
+      <>
           <Routes>
               <Route path="/" element={!isAuthenticated ? <Authentication setIsAuthenticated={setIsAuthenticated} /> : null} />
               <Route path="/banking" element={
@@ -28,6 +28,14 @@ function App() {
                   </>
               } />
           </Routes>
+      </>
+  );
+}
+
+function App() {
+  return (
+      <Router basename={process.env.PUBLIC_URL}>
+          <MainApp />
       </Router>
   );
 }
