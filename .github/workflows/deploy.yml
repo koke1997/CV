@@ -18,18 +18,12 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Check for package-lock.json
-        run: |
-          if [ ! -f package-lock.json ]; then
-            echo "package-lock.json not found. Please run 'npm install' to generate it."
-            exit 1
-          fi
-
+       main
       - name: Run npm ci
         run: npm ci
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build project
         run: npm run build
