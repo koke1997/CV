@@ -4,11 +4,12 @@
   "description": "Landing page for Ivan Kokalovic's resume",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack serve --mode development",
-    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --content-base public",
+    "build": "webpack --mode production --output-path public",
     "postinstall": "npm ci",
     "prebuild": "npm ci"
   },
+  "homepage": "https://koke1997.github.io/CV",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
