@@ -12,6 +12,16 @@ I am Ivan Kokalovic, a software developer with experience in Python and other pr
 
 <div id="root"></div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="linkedin-profile">
+                <iframe src="https://www.linkedin.com/in/kokalovic/" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
 <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
