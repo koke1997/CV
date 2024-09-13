@@ -1,0 +1,20 @@
+@(message: String)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Kokalovic Resume</title>
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/main.css")">
+</head>
+<body>
+    <header>
+        <h1>Ivan Kokalovic Resume</h1>
+    </header>
+    <main>
+        <p>@message</p>
+        <p><a href="@routes.Assets.versioned("pdfs/IvanKokalovicResume_v3.pdf")">Download my resume</a></p>
+    </main>
+</body>
+</html>

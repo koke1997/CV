@@ -4,7 +4,7 @@ Welcome to the repository for Ivan Kokalovic's resume. This repository contains 
 
 ## Description
 
-This project is a personal resume website for Ivan Kokalovic. It showcases my skills, experience, and projects. The website is built using React and other modern web technologies.
+This project is a personal resume website for Ivan Kokalovic. It showcases my skills, experience, and projects. The website is built using the Play Framework and Scala.
 
 ## Features
 
@@ -27,31 +27,28 @@ To run this project locally, follow these steps:
    cd Stretch-Python
    ```
 
-3. Install the dependencies:
+3. Install the Play Framework and its dependencies:
    ```bash
-   npm install
+   sbt update
    ```
 
 4. Start the development server:
    ```bash
-   npm start
+   sbt run
    ```
 
-5. Open your browser and visit `http://localhost:8080` to view the website.
+5. Open your browser and visit `http://localhost:9000` to view the website.
 
 ## Deployment
 
-This project is deployed using GitHub Pages. To deploy the latest version of the website, follow these steps:
+This project is deployed using Play Framework's deployment methods. To deploy the latest version of the website, follow these steps:
 
 1. Build the project:
    ```bash
-   npm run build
+   sbt dist
    ```
 
-2. Push the changes to the `gh-pages` branch:
-   ```bash
-   git subtree push --prefix dist origin gh-pages
-   ```
+2. Deploy the generated distribution package to your server.
 
 ## License
 
