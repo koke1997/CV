@@ -10,6 +10,29 @@ Welcome to my landing page! Here you can find my resume and learn more about me.
 
 I am Ivan Kokalovic, a software developer with experience in Python and other programming languages. I have worked on various projects and have a strong background in software development and engineering.
 
+## About Me
+
+I am a passionate software developer with a strong background in software engineering. I enjoy working on challenging projects and continuously improving my skills.
+
+## Skills
+
+- Python
+- JavaScript
+- React
+- HTML/CSS
+- SQL
+- Git
+
+## Projects
+
+- Project 1: Description of project 1
+- Project 2: Description of project 2
+- Project 3: Description of project 3
+
+## Contact
+
+You can reach me at [ivan.kokalovic@example.com](mailto:ivan.kokalovic@example.com)
+
 <div id="root"></div>
 
 <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
